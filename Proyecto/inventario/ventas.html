@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <th><img src="https://img.freepik.com/vector-premium/vector-ilustracion-salon-vida-belleza-mujer-creativa-logotipo-moda_669794-218.jpg" width="33%;" style="border-radius: 8px;"></th>
+                <th><h1>Formulario de registro Ventas/Compras</h1></th>
+                <th><img src="Img/logo.jpg" width="33%" style="border-radius: 8px;" ></th>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <hr>
+    
+    <form action="insert.php" method="GET">
+      <center><h2>Factura Electronica</h2></center>
+      <label for="Name">Seleccione item</label>
+      <select name="item">
+       <option value="item1">VENTAS</option>
+       <option value="item2">COMPRAS</option>
+      </select>
+      <div class="name">
+      <input type="text" name="codigo" placeholder="codigo " style="width: 200px;" height="20px;">
+      </div>
+      <div>
+      <input type="text" name="Producto" placeholder="producto" style="width: 200px;" height="20px;">
+      </div>
+      
+      <div>
+      <input type="text" name="color" placeholder=" color " style="width: 200px;" height="20px;">
+      </div>
+      <div>
+      <input type="text" name="Marca" placeholder=" marca" style="width: 150px;" height="20px;">
+      </div>
+      <div>
+      <input type="text" name="Modelo" placeholder=" modelo" style="width: 200px;" height="20px;">
+      </div>
+      
+      <div>
+      <input name="Cantidad" placeholder="cantidad" style="width: 150px;" height="20px;">
+      </div>
+      <div>
+      <input name="precio" placeholder=" precio" style="width: 150px;" height="20px;">
+      </div>
+      <div>
+        <input type="submit" class="boton" name="Ingresar" value="Comprar" style="border-radius: 8px;">
+      </div>
+    </form>
+</body>
+<style>
+    body{
+        background-color: pink;
+    }
+    th{
+        border: 2px solid black;
+    }
+    form{
+        border-radius: 15px;
+        border: 2px solid black;
+        width: 600px;
+        position: relative;
+        top: 50%;
+        left: 28%;
+        text-align: center;
+        background-color: white;
+        color: red;
+        
+    }
+    input{
+        margin: 10px;
+        padding: 5px;
+    }
+    .boton{
+        background-color: blue;
+        color: white;
+        width: 150px;
+    }
+</style>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Female Store formulario</title>
+</head>
+<body>
+    <img src="Img/logo.jpg" style="border-radius: 8px;" width="120" class="logo">
+    <center><img src="https://img.freepik.com/psd-gratis/plantilla-banner-venta_24972-824.jpg" width="55%" alt=""></center>
+    <br>
+    <center><legend>Stock de Inventario</legend></center>
+     
+
+    <br>
+    <form action="insertar.php" method="GET">
+        <br>
+        <table>
+            <td>
+                <tr>
+                    <center><legend>Ingresar Producto</legend></center>
+                </tr>
+            </td>
+            <br>
+            <label for="Name">Seleccione item</label>
+            <select name="item">
+            <option value="item1">VENTAS</option>
+            <option value="item2">COMPRAS</option>
+            </select>
+            <br>
+            <br>
+            <label for="Id">
+                <input type="text" name="id_producto" placeholder="Id">
+            </label>
+            <br>
+            <br>
+            <label for="Producto">
+                <input type="text" name="nombre_producto" placeholder=" Producto">
+            </label>
+            <br>
+            <br>
+            <label for="Color">
+                <input type="text" name="color" placeholder=" Color">
+            </label>
+            <br>
+            <br>
+            <label for="Marca">
+                <input type="text" name="marca" placeholder="Marca">
+            </label>
+            <br>
+            <br>
+            <label for="Modelo">
+                <input type="text" name="modelo" placeholder="Modelo">
+            </label>
+            <br>
+            <br>
+            <label for="Precio">
+                <input type="text" name="precio" placeholder="Precio">
+            </label>
+            <br>
+            <br>
+            <label for="Unidades">
+                <input type="text" name="unidades" placeholder="Unidades">
+            </label>
+            <br>
+            <br>
+            <input type="submit" class="boton" value="Ingresar Producto">
+        </table>
+    </form>
+
+    <style>
+        body {
+            background-color: pink;
+        }
+        form {
+            background-color: white;
+            border: 2px solid;
+            color: red;
+            font-size: 20px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            position: relative;
+            width: 50%;
+        }
+        input {
+            height: 30px;
+            width: 280px;
+        }
+        .boton {
+            background-color: blue;
+            height: 25px;
+            width: 160px;
+            color: white;
+            font-size: 18px;
+            border-radius: 7px;
+        }
+        legend {
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</body>
+
+
+</html>
